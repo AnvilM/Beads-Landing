@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+@font-face {
+    font-family: 'Etna';
+    src: url('fonts/Etna/Etna.woff2') format('woff2'),
+        url('fonts/Etna/Etna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;}
+a{text-decoration: none;}
+html{background:#fdc7cd; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+body{margin: 0; overflow-x: hidden;}
+.Main
+{
+    width: 100%;
+    background: url("img/background.png") no-repeat;
+    background-size: cover;
+    transition-duration: .3s;
+}
+
+.contacts
+{
+    margin:0;
+    text-align: center;
+
+}
+#contacts{margin-left: 15px; margin-top: 15px; animation: arrowlevitate infinite; animation-duration: 5s; cursor: pointer;}
+@keyframes arrowlevitate
+{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(10px);}
+    100%{transform: translateY(0px);}
+}
+
+
+
+
+.Hello
+{
+    text-align: center;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 460px;
+}
+.Hello h1 
+{
+    font-size: 82px;
+    color: white;
+    font-family: Indie Flower;
+    margin: 0;
+    text-shadow: 1px 1px 1px black;
+}
+.Hello p
+{
+    font-size: 42px;
+    color: white;
+    font-family: Indie Flower;
+    margin: 0;
+    text-shadow: 1px 1px 1px black;
+}
+.boxs
+{
+    margin: 0;
+    margin-top: 430px;
+}
+.boxsline
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+.box
+{
+    width: 350px;
+    height: 530px;
+    background: white;
+    box-shadow: 0px 0px 0px #daa7aa;
+    transition-duration: .3s;
+    cursor: pointer;
+    animation: boxslevitate infinite ease-out 5s;
+}
+
+.box:hover
+{
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 0px #daa7aa;
+}
+.box:hover .intothebox p
+{
+    opacity: 0;
+}
+.box:hover #image
+{
+    opacity: 1;
+}
+
+
+
+
+
+.intothebox
+{
+    text-align: center;
+    height: 530px;
+}
+#icon
+{
+    margin: 0;
+    margin-top: -37px;
+}
+.intothebox h1
+{
+    margin: 0;
+    font-family: Indie Flower;
+    color: #fcc6cc;
+    font-weight: 100;
+    font-size: 80px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.intothebox .boxtextline
+{
+    width: 146px;
+    height: 2px;
+    margin-left: calc(50% - 73px);
+    background-color: black;
+    margin-bottom: 30px;
+}
+.intothebox p
+{
+    margin: 0;
+    font-family: Etna;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.705);
+    transition-property: opacity;
+    transition-duration: .3s;
+}
+#image
+{
+    margin: 0;
+    margin-top: -530px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #fdc7cd;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: #464646;
+    border-radius: 10px;
+}
+
+
+
+
+.footer
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 500px;
+    background:#daa7aa ;
+    box-shadow: 0px -10px 100px black;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    
+}
+.footer p
+{
+    margin: 0;
+    font-family: Assistant;
+    font-size: 25px;
+    color: white;
+}
+.footertexts
+{
+    position: relative; top: 50px;
+}
+.madeby p
+{
+    position: relative; top: 30px;
+    display: inline;
+}
+#Anvil
+{
+    color: black;
+}
+#Love
+{
+    color: red;
+}
+
+
+
+@media(max-width:1100px)
+{
+
+.box
+{
+    margin-top: 100px;
+    transform: scale(90%);
+}
+.boxs
+{
+    margin-top: 350px;
+}
+.box:hover
+{
+    transform: translate(-10px, -10px) scale(90%);
+}
+
+
+}
+
+@media(max-width:980px)
+{
+
+    .boxsline
+    {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .box
+    {
+        margin-top: -100px;
+        transform: scale(70%);
+    }
+    .boxs
+    {
+        margin-top: 200px;
+    }
+    .box:hover
+    {
+        transform: translate(-10px, -10px) scale(70%);
+    }
+    .Hello h1
+    {
+        font-size: 42px;
+    }
+    .Hello p
+    {
+        font-size: 30px;
+    }
+
+
+    .footer
+    {
+        height: 100px;
+    }
+    .footer p
+    {
+        font-size: 15px;
+    }
+    .footertexts
+    {
+        position: relative; top: 25px;
+    }
+    .madeby p
+    {
+        position: relative; top: 15px;
+        display: inline;
+    }
+
+}
+
+
+
